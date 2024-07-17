@@ -1,4 +1,4 @@
-# Travel Planner API
+# NodeJs Fundamentals
 
 Esse Projeto me aperfeiçoou em fundamentos node, onde pude aprender streaming, também aprendi que o node utiliza a arquitetura non-blocking I/O e utilizei os conceitos de readable streams e writable streams de forma parcial e para tratar os dados.
 

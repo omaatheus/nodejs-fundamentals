@@ -52,5 +52,15 @@ export class Database { //essa classe é um mock de um banco de dados
 
         
     }
+    update(table, id, data) {
+        const rowIndex = this.#database[table].findIndex(row => row.id === id); //procura o index do dado que tem o id passado
+
+        if (rowIndex > -1) { //se não encontrar o dado
+            this.#database[table][rowIndex] = { id, ...data };
+            this.#persist(); //chama o método persist
+        } else {
+            console.log('Não foi possível encontrar o dado');
+        }
+    }
 
 }

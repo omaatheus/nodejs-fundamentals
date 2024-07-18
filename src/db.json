@@ -1,1 +1,14 @@
-{"users":[{"id":"c149c82b-8368-48e1-a15c-63a329667c7f","name":"Isabella","email":"Isabella@example.com"}]}
+{
+    "users": [
+        {
+            "id": "c149c82b-8368-48e1-a15c-63a329667c7f",
+            "name": "Isabella",
+            "email": "Isabella@example.com"
+        },
+        {
+            "id": "a2588d23-e631-4e45-98f2-8e5b8b58d01a",
+            "name": "Jose",
+            "email": "Jose@example.com"
+        }
+    ]
+}

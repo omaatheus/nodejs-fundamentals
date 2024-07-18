@@ -20,9 +20,17 @@ export class Database { //essa classe é um mock de um banco de dados
     }
     //se colocamos a # na frente do nome da propriedade, ela se torna privada
 
-    select(table) { //método que simula um select
-        const data = this.#database[table] ?? [] //se não existir a tabela, retorna um array vazio
+    select(table, search) { //método que simula um select
+        let data = this.#database[table] ?? [] //se não existir a tabela, retorna um array vazio
         
+        if(search) {
+            data = data.filter(row => {
+             return Object.entries(search).some(([key, value]) => {
+                return row[key].toLowerCase().includes(value.toLowerCase());
+             })
+            })
+        }
+
         return data;
     }
 
